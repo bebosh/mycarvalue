@@ -1,0 +1,24 @@
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email":"pippo@pep.it",
+    "password":"pippo"
+}
+
+### Find a user by id
+GET http://localhost:3000/auth/1
+
+### Find users by email
+GET http://localhost:3000/auth?email=pippo@perippo.it
+
+### Delete user by id
+DELETE http://localhost:3000/auth/3
+
+### Update user by 
+PATCH  http://localhost:3000/auth/2
+Content-Type: application/json
+
+{
+    "email":"ciccio@pep.it"
+}
